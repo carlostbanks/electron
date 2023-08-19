@@ -16,7 +16,7 @@ root.render(
     <HashRouter>
       <Routes>
       <Route path='/' element={<Layout />}>
-          <Route path='/work' element={<Work />} />
+      <Route path='/work' element={<Work />} />
         </Route>
       </Routes>
     </HashRouter>

@@ -1,20 +1,15 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { NavBar } from "./Navbar";
+
 
 export const Layout: React.FC = () => {
     return (
-        <div>
-            <p>This is our layout</p>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/work">Work</Link>
-                </li>
-            </ul>
-
+        <div className="mx-auto max-w-4xl">
+            <NavBar />
+            <div className="py-2 px-6">
             <Outlet />
+            </div>
         </div>
     )
 }
